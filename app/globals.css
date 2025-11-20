@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  /* Sage Green Palette */
+  --background: #D8E6D8;
+  --foreground: #1a1a1a; /* Dark Grey */
+  
+  /* Accents */
+  --accent-primary: #8D7F71; /* Earthy Brown */
+  --accent-secondary: #A8B5A8; /* Darker Sage */
+  --accent-light: #F2F7F2; /* Light Beige/White-ish */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-light: var(--accent-light);
+  
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
