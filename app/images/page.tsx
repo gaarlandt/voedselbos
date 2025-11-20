@@ -36,7 +36,7 @@ export default async function ImagesPage() {
                                     {/* We use standard img tag here for simplicity in this overview page, 
                       but in production you'd use next/image with unoptimized=true */}
                                     <img
-                                        src={`/images/${image}`}
+                                        src={`/voedselbos/images/${image}`}
                                         alt={image}
                                         className="object-cover w-full h-full"
                                     />
